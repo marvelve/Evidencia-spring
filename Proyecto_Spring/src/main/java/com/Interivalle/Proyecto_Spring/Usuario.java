@@ -19,11 +19,19 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nombreCompleto;
+    private String nombre_completo;
     private String email;
-    private String nombreProyecto;
+    private String nombre_proyecto;
     private String ciudad;
     private String contrasena;
 
     // Getters y Setters
+    public void setNombreCompleto(String nombre_completo) {
+        this.nombre_completo = nombre_completo;
+    }
+
+    // Método getter para nombreCompleto (opcional)
+    public String getNombreCompleto() {
+        return nombre_completo;
+    }
 }

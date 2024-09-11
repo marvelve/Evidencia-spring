@@ -4,9 +4,10 @@
  */
 package com.Interivalle.Proyecto_Spring;
 import org.springframework.data.jpa.repository.JpaRepository;
+
 /**
  *
- * @author LENOVO
+ * @author MArysela Velasco
  */
 
 public interface Repositorio extends JpaRepository<Usuario, Long> {
