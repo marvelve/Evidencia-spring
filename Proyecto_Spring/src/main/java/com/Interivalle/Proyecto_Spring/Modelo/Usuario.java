@@ -30,8 +30,39 @@ public class Usuario {
         this.nombre_completo = nombre_completo;
     }
 
-    // Método getter para nombreCompleto (opcional)
     public String getNombreCompleto() {
         return nombre_completo;
+    }
+    
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+    
+    public void setNombreProyecto(String nombre_proyecto) {
+        this.nombre_proyecto = nombre_proyecto;
+    }
+
+    public String getNombreProyecto() {
+        return nombre_proyecto;
+    }
+    
+     public void setCiudad(String ciudad) {
+        this.ciudad =ciudad ;
+    }
+
+    public String getCiudad() {
+        return ciudad;
+    }
+    
+     public void setContraseña(String contrasena) {
+        this.contrasena = contrasena;
+    }
+
+    public String getContraseña() {
+        return contrasena;
     }
 }

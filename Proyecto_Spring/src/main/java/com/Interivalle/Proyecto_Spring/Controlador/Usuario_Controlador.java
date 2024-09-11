@@ -39,6 +39,10 @@ public class Usuario_Controlador {
        
        Usuario usuario = new Usuario();
        usuario.setNombreCompleto(nombre_completo);
+       usuario.setEmail(email);
+       usuario.setNombreProyecto(nombre_proyecto);
+       usuario.setCiudad(ciudad);
+       usuario.setContraseña(contrasena);
         
         repositorio.save(usuario); // Guardar en la base de datos
         return "Registro_exitoso";  // Página que muestra éxito
