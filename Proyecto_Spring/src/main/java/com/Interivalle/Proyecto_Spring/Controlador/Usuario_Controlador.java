@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.Interivalle.Proyecto_Spring;
+package com.Interivalle.Proyecto_Spring.Controlador;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -12,6 +12,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestParam;
+import com.Interivalle.Proyecto_Spring.Repositorio.Usuario_Repositorio;
+import com.Interivalle.Proyecto_Spring.Usuario;
+
+
 
 /**
  *
@@ -19,9 +23,10 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 
 @Controller
-public class Registro_Controlador {
+public class Usuario_Controlador {
+    
     @Autowired
-    private Repositorio repositorio;
+    private Usuario_Repositorio repositorio;
 
     @GetMapping("/Registro")
     public String mostrarFormulario() {
