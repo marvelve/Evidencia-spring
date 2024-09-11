@@ -42,10 +42,10 @@ public class Usuario_Controlador {
        usuario.setEmail(email);
        usuario.setNombreProyecto(nombre_proyecto);
        usuario.setCiudad(ciudad);
-       usuario.setContraseña(contrasena);
+       usuario.setContrasena(contrasena);
         
         repositorio.save(usuario); // Guardar en la base de datos
-        return "Registro_exitoso";  // Página que muestra éxito
+        return "Login";  // Página que muestra éxito
     }
     
 }

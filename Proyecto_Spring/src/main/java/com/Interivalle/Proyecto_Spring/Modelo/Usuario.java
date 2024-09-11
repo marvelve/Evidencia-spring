@@ -58,11 +58,11 @@ public class Usuario {
         return ciudad;
     }
     
-     public void setContraseña(String contrasena) {
+     public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
     }
 
-    public String getContraseña() {
+    public String getContrasena() {
         return contrasena;
     }
 }
