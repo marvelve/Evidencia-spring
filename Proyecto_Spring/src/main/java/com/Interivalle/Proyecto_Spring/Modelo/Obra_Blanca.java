@@ -31,7 +31,6 @@ public class Obra_Blanca {
     private int cantidadMuros;
     private int cantidadPuntosElectricos;
 
-    // Getters y Setters
     
     // Getters y Setters
     public void setAreaPrivada(double medida_area_privada) {
