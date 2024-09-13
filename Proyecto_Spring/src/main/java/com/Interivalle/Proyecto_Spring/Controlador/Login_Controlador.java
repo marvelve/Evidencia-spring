@@ -33,7 +33,7 @@ public class Login_Controlador {
 
         if (usuario != null && usuario.getContrasena().equals(contrasena)) {
             // Redirige a una página de bienvenida o dashboard
-            return new ModelAndView("Ingreso", "Usuario", usuario);
+            return new ModelAndView("ObraBlanca", "Usuario", usuario);
         } else {
             // Redirige de nuevo al login con un mensaje de error
             ModelAndView mav = new ModelAndView("Login");
