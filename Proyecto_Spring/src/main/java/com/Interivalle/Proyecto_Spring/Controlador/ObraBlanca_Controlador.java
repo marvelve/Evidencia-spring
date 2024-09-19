@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 @Controller
 public class ObraBlanca_Controlador {
-        @Autowired
+     @Autowired
     private ObraBlanca_Repositorio obraBlancaRepositorio;
 
     @GetMapping("/obrablanca")

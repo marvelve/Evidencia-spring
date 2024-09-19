@@ -8,6 +8,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import javax.validation.constraints.DecimalMin;
+
 
 /**
  *
@@ -18,8 +20,8 @@ public class Obra_Blanca {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    
+     
+    @DecimalMin(value = "1.0", message = "Las medidas del área deben ser positivas")
     private double medidaAreaPrivada;
     private double medidaCocina;
     private double medidaBano;
